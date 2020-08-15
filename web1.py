@@ -40,7 +40,7 @@ def get_data(pageNo,q):
         name = d.find('span', attrs={'class':'a-size-medium a-color-base a-text-normal'})
         price = d.find('span', attrs={'class':'a-offscreen'})
         rating = d.find('span', attrs={'class':'a-icon-alt'})
-        image = d.find('script',attrs={'class':''})
+        # image = d.find('script',attrs={'class':''})
         all=[]
 		
         if name is not None:
@@ -57,10 +57,10 @@ def get_data(pageNo,q):
             all.append(rating.text)
         else:
             all.append('-1')
-        if image is  not None :
-            all.append(image)
-        else:
-            all.append("Image not found")
+        # if image is  not None :
+        #     all.append(image)
+        # else:
+        #     all.append("Image not found")
         q.put(all)
         #print("-"*75) 
 results = []
