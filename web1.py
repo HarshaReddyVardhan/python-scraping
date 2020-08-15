@@ -23,8 +23,8 @@ ratings=[]
 images = []
 no_pages = 20
 
-# url="https://www.amazon.com/s?k=laptops&page="
-url = 'https://www.amazon.com/s?k=mens+sunglasses&ref=nb_sb_noss_2'
+url="https://www.amazon.com/s?k=laptops&page="
+# url = 'https://www.amazon.com/s?k=mens+sunglasses&ref=nb_sb_noss_2'
 if not len(url) :
     url = input('enter url')
 
